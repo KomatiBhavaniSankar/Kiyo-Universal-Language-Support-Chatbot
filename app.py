@@ -12,7 +12,7 @@ import auto_detect
 
 # Set up Google Cloud credentials from an environment variable.
 try:
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\komat\Downloads\future-loader-470415-n9-34d512f524f3.json"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ""
     translate_client = translate.Client()
 except Exception as e:
     st.error(f"Error initializing Google Cloud Translate client: {e}")
@@ -410,3 +410,4 @@ elif prompt_input:
     handle_chat_input(prompt_input)
 
 st.markdown("---")
+
